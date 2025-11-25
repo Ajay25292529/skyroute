@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Weather App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="animated-bg">
+  <div id="clouds"></div>
+  <div id="sun-moon"></div>
+  <div id="weather-effects"></div>
+</div>
+
+<div class="container glass">
+  <h1 class="title">🌄 Weather Pro 🌄</h1>
+
+  <div class="top-controls">
+    <input type="text" id="city" placeholder="Enter city">
+    <button id="searchBtn">Search</button>
+    <button id="gpsBtn" class="gps-btn">🌍 GPS</button>
+    <button id="modeBtn" class="mode-btn">🌙</button>
+  </div>
+
+  <div class="weather-card glass" id="weather-info">
+    <img class="icon" id="currentWeatherIcon" src="" alt="Weather Icon">
+    <h2 id="temperature"></h2>
+    <p class="desc" id="description"></p>
+    <div class="info">
+      <p id="humidity"></p>
+      <p id="wind"></p>
+    </div>
+  </div>
+
+  <h3 class="forecast-title">5-Day Forecast</h3>
+  <div class="forecast-container" id="forecast"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
